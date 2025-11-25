@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa da Estética</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+    }
+
+    /* ---- CABEÇALHO ---- */
+    header {
+        background-color: #f26ab3;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+
+    header .logo-area {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo-area img {
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    .titulo-clinica {
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 28px;
+    }
+
+    header .menu-conta {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    header .menu-conta a {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    /* ---- MENU SUPERIOR ---- */
+    nav {
+        background-color: #f26ab3;
+        color: white;
+        display: flex;
+        padding: 10px 15px;
+        font-size: 20px;
+        font-weight: bold;
+        gap: 25px;
+        border-bottom: 4px solid #d65a9e;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        white-space: nowrap;
+        padding: 5px 8px;
+        border-radius: 4px;
+        transition: 0.2s;
+    }
+
+    nav a:hover {
+        background-color: #d65a9e;
+    }
+
+    /* ---- CONTEÚDO PRINCIPAL ---- */
+    .conteudo {
+        display: grid;
+        grid-template-columns: 2fr 1.3fr;
+        padding: 30px;
+        gap: 40px;
+    }
+
+    .card-texto {
+        border: 2px solid #e2e2e2;
+        padding: 20px 25px;
+        border-radius: 4px;
+        background-color: #fafafa;
+    }
+
+    .card-texto h2 {
+        color: #b44d89;
+        font-size: 24px;
+    }
+
+    .card-texto ul {
+        margin-top: 15px;
+        line-height: 1.6;
+        font-size: 16px;
+    }
+
+    .imagem-clinica {
+        width: 100%;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+    }
+
+    /* ---- TABELA LATERAL ---- */
+    .conteudo-secundario {
+        margin-top: 20px;
+        border: 2px solid #e2e2e2;
+        padding: 15px 20px;
+        width: 320px;
+    }
+
+    .conteudo-secundario h3 {
+        color: #b44d89;
+        margin-bottom: 10px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo-area">
+         <a href="sobre.html">
+             <img src="https://i.pinimg.com/736x/4c/c8/39/4cc8395226680a6333a118308bdde4b1.jpg" alt="Logo da Clínica"> 
+        </a>
+        <div class="titulo-clinica">
+            CASA DA<br>ESTÉTICA
+        </div>
+    </div>
+
+    <div class="menu-conta">
+        <a href="meuspedidos.html"><span>☰</span> Meus pedidos</a>
+        <a href="minhaconta.html"><span>👤</span> Minha conta</a>
+    </div>
+</header>
+
+<nav>
+    <a href="pacotes.html">Pacotes</a>
+    <a href="faciais.html">Procedimentos Faciais</a>
+    <a href="corporais.html">Procedimentos Corporais</a>
+    <a href="invasivos.html">Procedimentos Invasivos</a>
+    <a href="black.html">Black Friday</a>
+    <a href="combo.html">Combo</a>
+</nav>
+
+<div class="conteudo">
+
+    <div>
+        <div class="card-texto">
+            <h2>SOBRE A NOSSA CLÍNICA</h2>
+            <ul>
+                <li>Nós da Clínica de Estética avançada buscamos proporcionar momentos de bem estar, saúde e beleza para nossos clientes, oferecendo atendimento diferenciado e inovador em tratamentos estéticos faciais e corporais.</li>
+                <li>Nossa política de conduta humanizada permite que, antes de tudo a saúde do cliente seja a nossa prioridade, seguindo todos os protocolos de segurança e ética para exercer o nosso trabalho.</li>
+                <li>Contamos com equipe de profissionais especializados que estão em constante atualização e trabalham com equipamentos com tecnologia de ponta.</li>
+                <li>Preparamos um espaço único, confortável, sofisticado e aconchegante para massagens relaxantes, modeladoras, terapêuticas e faciais, oferecendo uma experiência memorável ao cliente.</li>
+                <li>Desde 2020 a clínica está localizada em uma região privilegiada de Curitiba, planejada com salas individuais com macas quentinhas e ambientadas, trazendo aconchego com a pele e o corpo.</li>
+            </ul>
+        </div>
+
+        <div class="conteudo-secundario">
+            <h3>CONTEÚDO</h3>
+            <ul>
+                <li><a href="sobre.html">Sobre a clínica</a></li>
+                <li><a href="profissionais.html">Profissionais</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="fale.html">Fale Conosco</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <img src="https://i.pinimg.com/1200x/24/d9/fa/24d9fa8b53611493dceb97c918aa999b.jpg" class="imagem-clinica" alt="Foto da clínica">
+    </div>
+
+</div>
+
+</body>
+</html>
+
