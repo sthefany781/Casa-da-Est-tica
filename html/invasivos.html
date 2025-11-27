@@ -1,0 +1,228 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa da Estética</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+    }
+
+    header {
+        background-color: #f26ab3;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+
+    header .logo-area {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo-area img {
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    .titulo-clinica {
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 28px;
+    }
+
+    header .menu-conta {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    header .menu-conta a {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    nav {
+        background-color: #f26ab3;
+        color: white;
+        display: flex;
+        padding: 10px 15px;
+        font-size: 20px;
+        font-weight: bold;
+        gap: 25px;
+        border-bottom: 4px solid #d65a9e;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        white-space: nowrap;
+        padding: 5px 8px;
+        border-radius: 4px;
+        transition: 0.2s;
+    }
+
+    nav a:hover {
+        background-color: #d65a9e;
+    }
+
+    h2#corporaisTitulo {
+        color: #b44d89;
+        font-size: 26px;
+        font-weight: bold;
+        margin: 30px 0 0 40px;
+    }
+
+    .corporais-container {
+        display: flex;
+        gap: 25px;
+        padding: 30px 40px;
+        justify-content: flex-start;
+    }
+
+    .card-pacote {
+        width: 230px;
+        border: 2px solid #f3c7e2;
+        padding: 10px;
+        border-radius: 6px;
+        background-color: white;
+    }
+
+    .card-pacote img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    .card-pacote p {
+        font-size: 14px;
+        margin: 8px 0;
+    }
+
+    .preco {
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .btn-comprar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background-color: #e36ac4;
+        color: white;
+        padding: 10px 0;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 6px;
+        margin-top: 12px;
+        font-size: 18px;
+    }
+
+    .btn-comprar:hover {
+        background-color: #cc56ad;
+    }
+
+    .btn-comprar img {
+        width: 24px;
+        height: 24px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo-area">
+         <a href="sobre.html">
+             <img src="https://i.pinimg.com/736x/4c/c8/39/4cc8395226680a6333a118308bdde4b1.jpg" alt="Logo da Clínica"> 
+        </a>
+        <div class="titulo-clinica">
+            CASA DA<br>ESTÉTICA
+        </div>
+    </div>
+
+    <div class="menu-conta">
+        <a href="meuspedidos.html"><span>☰</span> Meus pedidos</a>
+        <a href="minhaconta.html"><span>👤</span> Minha conta</a>
+    </div>
+</header>
+
+<nav>
+    <a href="pacotes.html">Pacotes</a>
+    <a href="faciais.html">Procedimentos Faciais</a>
+    <a href="corporais.html">Procedimentos Corporais</a>
+    <a href="invasivos.html">Procedimentos Invasivos</a>
+</nav>
+
+<h2 id="corporaisTitulo">PROCEDIMENTOS INVASIVOS</h2>
+
+<div class="corporais-container">
+
+    <div class="card-pacote">
+        <img src="https://i.pinimg.com/736x/da/cd/ff/dacdff5b40111e01692cfe6808ee49b8.jpg">
+        <p><b>PREENCHIMENTO 1ML</b></p>
+        <p class="preco">R$ 1.100,00</p>
+        <p>até 10x de R$ 135,55<br>ou R$ 1.067,00 via Pix</p>
+
+        <a href="#" class="btn-comprar">
+            <img src="https://cdn-icons-png.flaticon.com/512/833/833314.png">
+            Comprar
+        </a>
+    </div>
+
+    <div class="card-pacote">
+        <img src="https://i.pinimg.com/736x/23/f7/0e/23f70ed907ff87194bf258438ed611ee.jpg">
+        <p><b>APLICAÇÃO PARA VARICOSE</b></p>
+        <p class="preco">R$ 750,00</p>
+        <p>até 10x de R$ 92,42<br>ou R$ 727,50 via Pix</p>
+
+        <a href="#" class="btn-comprar">
+            <img src="https://cdn-icons-png.flaticon.com/512/833/833314.png">
+            Comprar
+        </a>
+    </div>
+
+    <div class="card-pacote">
+        <img src="https://i.pinimg.com/1200x/8d/0a/83/8d0a83ee14cf6cd5e88867bac29ba3ab.jpg">
+        <p><b>BOTOX</b></p>
+        <p class="preco">R$ 1.100,00</p>
+        <p>até 10x de R$ 135,55<br>ou R$ 1.067,00 via Pix</p>
+
+        <a href="#" class="btn-comprar">
+            <img src="https://cdn-icons-png.flaticon.com/512/833/833314.png">
+            Comprar
+        </a>
+    </div>
+
+    <div class="card-pacote">
+        <img src="https://i.pinimg.com/736x/47/c2/d9/47c2d9cc1b21bc880a100872453881ce.jpg">
+        <p><b>ENZIMAS (PACOTE COM 5 SESSÕES)</b></p>
+        <p class="preco">R$ 830,00</p>
+        <p>até 10x de R$ 102,28<br>ou R$ 805,10 via Pix</p>
+
+        <a href="#" class="btn-comprar">
+            <img src="https://cdn-icons-png.flaticon.com/512/833/833314.png">
+            Comprar
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
