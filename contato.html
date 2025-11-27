@@ -80,37 +80,61 @@
 
     .conteudo {
         display: grid;
-        grid-template-columns: 2fr 1.3fr;
+        justify-content: space-between;
         padding: 30px;
         gap: 40px;
     }
 
-    .card-texto {
-        padding: 20px 25px;
-        border-radius: 4px;
+    .titulo-contato {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: #000;
     }
 
-    .card-texto h2 {
-        color: #b44d89;
+    .btn-whatsapp {
+        display: block;
+        margin: 0 auto;
+        background-color: #7bdc69;
+        padding: 20px 40px;
         font-size: 24px;
+        font-weight: bold;
+        color: white;
+        border-radius: 15px;
+        text-decoration: none;
+        width: fit-content;
+        text-align: center;
+        transition: 0.3s;
     }
 
-    .card-texto ul {
-        margin-top: 15px;
-        line-height: 1.6;
-        font-size: 16px;
+    .btn-whatsapp:hover {
+        background-color: #6bc25d;
     }
 
     .conteudo-secundario {
-        margin-top: 20px;
         border: 2px solid #e2e2e2;
         padding: 15px 20px;
         width: 320px;
+        height: fit-content;
     }
 
     .conteudo-secundario h3 {
         color: #b44d89;
         margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .conteudo-secundario ul {
+        padding-left: 18px;
+        line-height: 1.8;
+        font-size: 16px;
+    }
+
+    .conteudo-secundario a {
+        text-decoration: none;
+        color: #333;
     }
 
 </style>
@@ -143,26 +167,30 @@
     <a href="combo.html">Combo</a>
 </nav>
 
+<h1 class="titulo-contato">Chamar no whatsapp</h1>
+
+<a class="btn-whatsapp" 
+   href="https://wa.me/5511999999999" 
+   target="_blank">
+   Clique para falar conosco
+</a>
+
+<br><br>
+
 <div class="conteudo">
 
-    <div>
-        <div class="card-texto">
-            <h2>CONTATO</h2>
+    <div></div>
+
+    <div class="conteudo-secundario">
+        <h3>CONTEÚDO</h3>
+        <ul>
+            <li><a href="sobre.html">Sobre a clínica</a></li>
+            <li><a href="profissionais.html">Profissionais</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="fale.html">Fale Conosco</a></li>
             
-        </div>
-
-        <div class="conteudo-secundario">
-            <h3>CONTEÚDO</h3>
-            <ul>
-                <li><a href="sobre.html">Sobre a clínica</a></li>
-                <li><a href="profissionais.html">Profissionais</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="fale.html">Fale Conosco</a></li>
-            </ul>
-        </div>
+        </ul>
     </div>
-
-
 </div>
 
 </body>
