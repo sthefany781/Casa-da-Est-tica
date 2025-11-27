@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa da Estética</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+    }
+
+    header {
+        background-color: #f26ab3;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+
+    header .logo-area {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo-area img {
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    .titulo-clinica {
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 28px;
+    }
+
+    header .menu-conta {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    header .menu-conta a {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    nav {
+        background-color: #f26ab3;
+        color: white;
+        display: flex;
+        padding: 10px 15px;
+        font-size: 20px;
+        font-weight: bold;
+        gap: 25px;
+        border-bottom: 4px solid #d65a9e;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        white-space: nowrap;
+        padding: 5px 8px;
+        border-radius: 4px;
+        transition: 0.2s;
+    }
+
+    nav a:hover {
+        background-color: #d65a9e;
+    }
+
+    h1.titulo-profissionais {
+        text-align: left;
+        font-size: 28px;
+        font-weight: bold;
+        margin: 40px 0 10px 40px;
+        color: #b44d89;
+    }
+
+    .area-profissionais {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 40px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card-profissional {
+        border: 1px solid #ddd;
+        width: 40%;
+        min-width: 300px;
+        padding: 15px;
+    }
+
+    .card-profissional img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-profissional h2 {
+        margin-top: 10px;
+        font-size: 20px;
+        color: #000;
+    }
+
+    .card-profissional ul {
+        line-height: 1.6;
+    }
+
+    .conteudo {
+        display: grid;
+        justify-content: space-between;
+        padding: 30px;
+        gap: 40px;
+    }
+
+    .conteudo-secundario {
+        border: 2px solid #e2e2e2;
+        padding: 15px 20px;
+        width: 320px;
+        height: fit-content;
+    }
+
+    .conteudo-secundario h3 {
+        color: #b44d89;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .conteudo-secundario ul {
+        padding-left: 18px;
+        line-height: 1.8;
+        font-size: 16px;
+    }
+
+    .conteudo-secundario a {
+        text-decoration: none;
+        color: #333;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo-area">
+         <a href="sobre.html">
+             <img src="https://i.pinimg.com/736x/4c/c8/39/4cc8395226680a6333a118308bdde4b1.jpg" alt="Logo da Clínica"> 
+        </a>
+        <div class="titulo-clinica">
+            CASA DA<br>ESTÉTICA
+        </div>
+    </div>
+
+    <div class="menu-conta">
+        <a href="meuspedidos.html"><span>☰</span> Meus pedidos</a>
+        <a href="minhaconta.html"><span>👤</span> Minha conta</a>
+    </div>
+</header>
+
+<nav>
+    <a href="pacotes.html">Pacotes</a>
+    <a href="faciais.html">Procedimentos Faciais</a>
+    <a href="corporais.html">Procedimentos Corporais</a>
+    <a href="invasivos.html">Procedimentos Invasivos</a>
+    <a href="black.html">Black Friday</a>
+    <a href="combo.html">Combo</a>
+</nav>
+
+<h1 class="titulo-profissionais">PROFISSIONAIS</h1>
+
+<div class="area-profissionais">
+
+    <div class="card-profissional">
+        <img src="https://i.pinimg.com/736x/b9/c6/cb/b9c6cb45671297a1f55f0be443f3e4f2.jpg" alt="Profissional Renata">
+        <h2>Renata Monteiro</h2>
+        <ul>
+            <li>Sócia e Esteticista</li>
+            <li>Técnica em Estética há 3 anos</li>
+            <li>Se aperfeiçoou em pós operatório, microagulhamento e massagens.</li>
+        </ul>
+    </div>
+
+    <div class="card-profissional">
+        <img src="https://i.pinimg.com/736x/d8/87/10/d88710bcb700458d9eb3a767d720947d.jpg" alt="Profissional Nathalia">
+        <h2>Nathália Nogueira</h2>
+        <ul>
+            <li>Sócia e Esteticista</li>
+            <li>Tecnóloga em Estética, atua há 5 anos.</li>
+            <li>Especialista em técnicas de relaxamento e drenagem gestacional.</li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="conteudo">
+    
+    <div></div>
+
+    <div class="conteudo-secundario">
+        <h3>CONTEÚDO</h3>
+        <ul>
+            <li><a href="sobre.html">Sobre a clínica</a></li>
+            <li><a href="profissionais.html">Profissionais</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="fale.html">Fale Conosco</a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
