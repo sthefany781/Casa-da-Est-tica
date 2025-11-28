@@ -1,229 +1,235 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Casa da Estética</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa da Estética</title>
 
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #ffffff;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
 
-    header {
-        background-color: #f26ab3;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px 40px;
-    }
+        header {
+            background-color: #f26ab3;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px;
+        }
 
-    header .logo-area {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
+        header .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
 
-    .logo-area img {
-        height: 80px;
-        border-radius: 50%;
-    }
+        .logo-area img {
+            height: 80px;
+            border-radius: 50%;
+        }
 
-    .titulo-clinica {
-        font-size: 32px;
-        font-weight: bold;
-        line-height: 28px;
-    }
+        .titulo-clinica {
+            font-size: 32px;
+            font-weight: bold;
+            line-height: 28px;
+        }
 
-    header .menu-conta {
-        display: flex;
-        align-items: center;
-        gap: 25px;
-        font-size: 18px;
-        font-weight: bold;
-    }
+        header .menu-conta {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            font-size: 18px;
+            font-weight: bold;
+        }
 
-    header .menu-conta a {
-        text-decoration: none;
-        color: white;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
+        header .menu-conta a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
 
-    nav {
-        background-color: #f26ab3;
-        color: white;
-        display: flex;
-        padding: 10px 15px;
-        font-size: 20px;
-        font-weight: bold;
-        gap: 25px;
-        border-bottom: 4px solid #d65a9e;
-    }
+        nav {
+            background-color: #f26ab3;
+            color: white;
+            display: flex;
+            padding: 10px 15px;
+            font-size: 20px;
+            font-weight: bold;
+            gap: 25px;
+            border-bottom: 4px solid #d65a9e;
+        }
 
-    nav a {
-        text-decoration: none;
-        color: white;
-        white-space: nowrap;
-        padding: 5px 8px;
-        border-radius: 4px;
-        transition: 0.2s;
-    }
+        nav a {
+            text-decoration: none;
+            color: white;
+            white-space: nowrap;
+            padding: 5px 8px;
+            border-radius: 4px;
+            transition: 0.2s;
+        }
 
-    nav a:hover {
-        background-color: #d65a9e;
-    }
+        nav a:hover {
+            background-color: #d65a9e;
+        }
 
-    .menu-conta {
-        font-size: 32px;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        color: #d65a9e;
-    }
+        .menu-conta {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #d65a9e;
+        }
 
-    .form-container {
-        width: 450px;
-        margin: 0 auto;
-        border: 1px solid #f2c1e0;
-        padding: 25px;
-        border-radius: 8px;
-        box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
-    }
+        .form-container {
+            width: 450px;
+            margin: 0 auto;
+            border: 1px solid #f2c1e0;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+        }
 
-    .form-container input,
-    .form-container textarea {
-        width: 100%;
-        padding: 12px;
-        border-radius: 20px;
-        border: 1px solid #f2c1e0;
-        margin-bottom: 12px;
-        outline: none;
-        font-size: 15px;
-    }
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 20px;
+            border: 1px solid #f2c1e0;
+            margin-bottom: 12px;
+            outline: none;
+            font-size: 15px;
+        }
 
-    .form-container textarea {
-        height: 100px;
-        resize: none;
-    }
+        .form-container textarea {
+            height: 100px;
+            resize: none;
+        }
 
-    .btns {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        margin-top: 10px;
-    }
+        .btns {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
 
-    .btn {
-        padding: 10px 22px;
-        border-radius: 15px;
-        cursor: pointer;
-        border: none;
-        font-size: 16px;
-        font-weight: bold;
-    }
+        .btn {
+            padding: 10px 22px;
+            border-radius: 15px;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
 
-    .fechar {
-        background-color: #e0e0e0;
-    }
+        .fechar {
+            background-color: #e0e0e0;
+        }
 
-    .enviar {
-        background-color: #e78cd4;
-        color: white;
-    }
+        .enviar {
+            background-color: #e78cd4;
+            color: white;
+        }
 
-    .conteudo {
-        display: grid;
-        justify-content: space-between;
-        padding: 30px;
-    }
+        .conteudo {
+            display: grid;
+            justify-content: space-between;
+            padding: 30px;
+        }
 
-    .conteudo-secundario {
-        border: 2px solid #e2e2e2;
-        padding: 15px 20px;
-        width: 320px;
-        height: fit-content;
-    }
+        .conteudo-secundario {
+            border: 2px solid #e2e2e2;
+            padding: 15px 20px;
+            width: 320px;
+            height: fit-content;
+        }
 
-    .conteudo-secundario h3 {
-        color: #b44d89;
-        margin-bottom: 10px;
-        font-size: 20px;
-    }
+        .conteudo-secundario h3 {
+            color: #b44d89;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
 
-    .conteudo-secundario ul {
-        padding-left: 18px;
-        line-height: 1.8;
-        font-size: 16px;
-    }
+        .conteudo-secundario ul {
+            padding-left: 18px;
+            line-height: 1.8;
+            font-size: 16px;
+        }
 
-    .conteudo-secundario a {
-        text-decoration: none;
-        color: #333;
-    }
-
-</style>
+        .conteudo-secundario a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-    <div class="logo-area">
-         <a href="sobre.html">
-             <img src="https://i.pinimg.com/736x/4c/c8/39/4cc8395226680a6333a118308bdde4b1.jpg" alt="Logo da Clínica"> 
+    <header>
+        <div class="logo-area">
+            <a href="sobre.html">
+                <img src="https://i.pinimg.com/736x/4c/c8/39/4cc8395226680a6333a118308bdde4b1.jpg"
+                    alt="Logo da Clínica">
+            </a>
+            <div class="titulo-clinica">
+                CASA DA<br>ESTÉTICA
+            </div>
+        </div>
+
+        <div class="menu-conta">
+            <a href="meuspedidos.html"><span>☰</span> Meus pedidos</a>
+            <a href="minhaconta.html"><span>👤</span> Minha conta</a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="pacotes.html">Pacotes</a>
+        <a href="faciais.html">Procedimentos Faciais</a>
+        <a href="corporais.html">Procedimentos Corporais</a>
+        <a href="invasivos.html">Procedimentos Invasivos</a>
+        <a href="black.html">Black Friday</a>
+        <a href="combo.html">Combo</a>
+    </nav>
+
+    <h1 class="menu-conta">IDENTIFICAÇÃO </h1>
+
+    <div class="form-container">
+        <input type="email" placeholder="E-mail">
+        <input type="email" placeholder="Confirme o E-mail">
+        <input type="text" placeholder="Senha">
+        <input type="text" placeholder="Confirme a senha">
+
+        <div class="btns">
+            <a href="concluirconta.html">
+                <button class="btn enviar">Continuar</button>
+        </div>
         </a>
-        <div class="titulo-clinica">
-            CASA DA<br>ESTÉTICA
+    </div>
+
+    <br><br>
+
+    <div class="conteudo">
+
+        <div></div>
+
+        <div class="conteudo-secundario">
+            <h3>CONTEÚDO</h3>
+            <ul>
+                <li><a href="sobre.html">Sobre a clínica</a></li>
+                <li><a href="profissionais.html">Profissionais</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="fale.html">Fale Conosco</a></li>
+            </ul>
         </div>
     </div>
 
-    <div class="menu-conta">
-        <a href="meuspedidos.html"><span>☰</span> Meus pedidos</a>
-        <a href="minhaconta.html"><span>👤</span> Minha conta</a>
-    </div>
-</header>
-
-<nav>
-    <a href="pacotes.html">Pacotes</a>
-    <a href="faciais.html">Procedimentos Faciais</a>
-    <a href="corporais.html">Procedimentos Corporais</a>
-    <a href="invasivos.html">Procedimentos Invasivos</a>
-</nav>
-
-<h1 class="menu-conta">IDENTIFICAÇÃO </h1>
-
-<div class="form-container">
-    <input type="email" placeholder="E-mail">
-    <input type="email" placeholder="Confirme o E-mail">
-    <input type="text" placeholder="Senha">
-    <input type="text" placeholder="Confirme a senha">
-
-    <div class="btns">
-        <button class="btn enviar">Continuar</button>
-    </div>
-</div>
-
-<br><br>
-
-<div class="conteudo">
-
-    <div></div>
-
-    <div class="conteudo-secundario">
-        <h3>CONTEÚDO</h3>
-        <ul>
-            <li><a href="sobre.html">Sobre a clínica</a></li>
-            <li><a href="profissionais.html">Profissionais</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="fale.html">Fale Conosco</a></li>
-        </ul>
-    </div>
-</div>
-
 </body>
+
 </html>
